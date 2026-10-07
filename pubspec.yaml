@@ -1,0 +1,37 @@
+name: med
+description: "Medication barcode scanner - scan and track your medicines"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  mobile_scanner: ^6.0.0
+  http: ^1.2.0
+  intl: ^0.20.0
+  path_provider: ^2.1.0
+  uuid: ^4.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icon.png
+    - assets/icon_foreground.png
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon.png"
+  adaptive_icon_background: "#FFF5EB"
+  adaptive_icon_foreground: "assets/icon_foreground.png"
+  remove_alpha_ios: true
